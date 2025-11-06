@@ -200,13 +200,16 @@ form label {
 
 form input,
 form textarea,
-form select { /* Añadido 'select' para que los desplegables se vean bien */
+form select { /* Estilo para los menús desplegables */
     width: 100%;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: var(--fuente-principal);
     font-size: 1rem;
+    /* Necesario para que Safari muestre bien los <select> */
+    -webkit-appearance: none; 
+    appearance: none; 
 }
 
 form button {
@@ -273,12 +276,7 @@ form button:hover {
     background-color: #1DA851;
 }
 
-.boton-llamar {
-    background-color: var(--color-acento-oliva);
-}
-.boton-llamar:hover {
-    background-color: var(--color-acento-oscuro);
-}
+/* NOTA: Eliminé .boton-llamar ya que lo quitaste de tu HTML. Si lo vuelves a poner, los estilos están listos. */
 
 .o-texto {
     text-align: center;
