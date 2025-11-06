@@ -195,6 +195,11 @@ footer {
     h2 {
         font-size: 1.8rem;
     }
+    /* --- Estilos responsive para Flujo de Trabajo --- */
+    .flujo-container {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+        gap: 1rem;
+    }
 /* ================================================ */
 /* ===== NUEVOS ESTILOS PARA FILTRO CDMX ===== */
 /* ================================================ */
@@ -223,4 +228,5 @@ footer {
         flex-basis: 100%; 
     }
 }
+
 
