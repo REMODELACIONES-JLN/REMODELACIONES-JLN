@@ -310,7 +310,75 @@ footer {
 .social-icons a:hover {
     color: var(--color-acento-oliva);
 }
+/* ================================================ */
+/* ===== NUEVOS ESTILOS PARA TESTIMONIOS ===== */
+/* ================================================ */
+#testimonios {
+    /* Fondo blanco, para contrastar con el flujo de trabajo */
+    background-color: var(--color-blanco);
+}
 
+.subtitulo-testimonios {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: -1.5rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonios-container {
+    display: grid;
+    /* 2 columnas en escritorio */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.testimonio-card {
+    background-color: var(--color-fondo); /* Fondo gris pálido */
+    border: 1px solid #f0f0f0;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    position: relative; /* Necesario para el icono */
+}
+
+.testimonio-icono {
+    font-size: 2.5rem;
+    color: var(--color-acento-oliva);
+    opacity: 0.5; /* Lo hacemos sutil */
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+}
+
+.testimonio-card blockquote {
+    font-family: var(--fuente-titulos); /* Fuente Lora (editorial) */
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    /* Añadimos padding para que el texto no se monte en el icono */
+    padding-top: 1.5rem; 
+    position: relative;
+    z-index: 2;
+}
+
+.testimonio-card cite {
+    display: block;
+    margin-top: 1.5rem;
+    font-family: var(--fuente-principal);
+    font-style: normal;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: right;
+    color: var(--color-texto);
+}
+
+.testimonio-card cite strong {
+    font-weight: 600;
+}
 
 /* ================================================ */
 /* ===== CÓDIGO RESPONSIVE (Móviles) ===== */
@@ -338,3 +406,4 @@ footer {
         gap: 1rem;
     }
 }
+
